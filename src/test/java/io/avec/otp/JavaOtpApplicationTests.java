@@ -1,7 +1,7 @@
 package io.avec.otp;
 
 import io.avec.otp.otp.Algorithm;
-import io.avec.otp.otp.OneTimePasswordServiceException;
+import io.avec.otp.otp.OneTimePasswordException;
 import io.avec.otp.otp.TimeBasedOneTimePassword;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +19,7 @@ class JavaOtpApplicationTests {
 
 
     @Test
-    void testPasswordTimeout() throws OneTimePasswordServiceException, InterruptedException {
+    void testPasswordTimeout() throws OneTimePasswordException, InterruptedException {
 
         // we will have a short duration so we do not hold up the test for a long time
 
@@ -38,7 +38,7 @@ class JavaOtpApplicationTests {
 
 
     @Test
-    void testPasswordTimeout2() throws OneTimePasswordServiceException {
+    void testPasswordTimeout2() throws OneTimePasswordException {
 
         // we will have a short duration so we do not hold up the test for a long time
 
