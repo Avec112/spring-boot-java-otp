@@ -9,7 +9,7 @@ Simple implementation of [jchambers/java-otp](https://github.com/jchambers/java-
 
 
 ## Dependency
-```
+```xml
 <dependency>
   <groupId>com.eatthepath</groupId>
   <artifactId>java-otp</artifactId>
@@ -25,7 +25,7 @@ There are two classes in use
 There is also an exception wrapper class `OneTimePasswordException` but exceptions would probably never occur
 
 ## Implementation
-```
+```java
 Duration duration = Duration.ofMinutes(5); // valid for 5 minutes
 TimeBasedOneTimePassword totp = new TimeBasedOneTimePassword(duration); 
 int password = totp.getPassword(); 
